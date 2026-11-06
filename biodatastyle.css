@@ -1,0 +1,329 @@
+body {
+    background-image: url(bg\ yay.jpg);
+    background-size: cover;
+    background-position: center
+}
+
+h2 {
+    background-color:lemonchiffon;
+    color:rgb(241, 231, 138);
+    text-align: center;
+    font-family: "gocake";
+    font-size: 30px;
+}
+
+h1 {
+    background-color:rgb(188, 229, 255);
+    color:lightskyblue;
+    text-align: center;
+    font-family: "matchamint";
+    font-size: 45px;
+}
+
+div.biodata {
+    margin: 30px auto;
+    width: 70%;
+    background-color:mistyrose;
+    color:rgb(255, 186, 198);
+    padding: 30px;
+    border-radius: 12px;
+    font-family: "elegantbloom";
+    font-size: 20pt;
+    letter-spacing: 0.3pt;
+    line-height: 2.5pt;
+}
+
+div.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+div.foto {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid rgb(255, 186, 198);
+}
+.foto img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.foto img.top {
+    opacity: 0;
+    z-index: 2;
+}
+
+.foto:hover img.top {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.foto img.bottom {
+    opacity: 1;
+    z-index: 2;
+}
+
+.foto:hover img.bottom {
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+@font-face {
+    font-family: "gocake";
+    src: url(go_cake/Gocake.otf)
+}
+
+@font-face {
+    font-family: "matchamint";
+    src: url(matcha_mint/Matcha\ Mint.otf)
+}
+
+@font-face {
+    font-family: "elegantbloom";
+    src: url(elegant_bloom/Elegant\ Bloom.otf)
+}
+  
+.foodpic {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    width: 95%;
+    margin: 30px auto;
+}
+
+.food {
+    flex: 1;
+    padding: 10px;
+    height: 200px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+    font-family:"matchamint";
+}
+
+/* warna tiap card */
+.food:nth-child(1) {
+    background-color:rgb(241, 231, 138);
+    color: goldenrod    
+}
+
+.food:nth-child(2) {
+    background-color:rgb(197, 234, 197);
+    color:darkseagreen
+}
+
+.food:nth-child(3) {
+    background-color:lightblue;
+    color:rgb(99, 194, 226)
+}
+
+.food:nth-child(4) {
+    background-color:thistle;
+    color: rgb(210, 136, 210)
+}
+
+.food:nth-child(5) {
+    background-color:pink;
+    color:palevioletred
+}
+
+.food:nth-child(6) {
+    background-color:mistyrose;
+    color:lightpink
+}
+
+.food img {
+    width:100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.food p {
+    margin: 12px 0 5px;
+    font-size: 18px;
+}
+
+.food:hover {
+    transform: scale(1.1);
+}
+
+.hobbypic {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    width: 95%;
+    margin: 30px auto;
+}
+
+.hobby {
+    flex: 1;
+    padding: 10px;
+    height: 200px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+    font-family:"matchamint";
+}
+
+/* warna tiap card */
+.hobby:nth-child(1) {
+    background-color:rgb(241, 231, 138);
+    color: goldenrod    
+}
+
+.hobby:nth-child(2) {
+    background-color:rgb(197, 234, 197);
+    color:darkseagreen
+}
+
+.hobby:nth-child(3) {
+    background-color:lightblue;
+    color:rgb(99, 194, 226)
+}
+
+.hobby:nth-child(4) {
+    background-color:thistle;
+    color: rgb(210, 136, 210)
+}
+
+.hobby:nth-child(5) {
+    background-color:pink;
+    color:palevioletred
+}
+
+.hobby:nth-child(6) {
+    background-color:mistyrose;
+    color:lightpink
+}
+
+.hobbypic {
+    display: flex;
+    gap: 25px;
+    width: 100%;
+    margin: 30px auto;
+    justify-content: space-between;
+}
+
+.picture {
+    position: relative;
+    width: 180px;
+    height: 215px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.picture img.second {
+    opacity: 1;
+    z-index: 1;
+}
+
+.picture img.first {
+    opacity: 0;
+    z-index: 2;
+}
+
+.picture:hover img.first {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.idolpic {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    width: 95%;
+    margin: 30px auto;
+}
+
+.idol {
+    flex: 1;
+    padding: 10px;
+    width: 150px;
+    height: 300px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+    font-family:"matchamint";
+    background-color:burlywood;
+    outline: dotted
+}
+/* warna tiap card */
+.idol:nth-child(1) {
+    color:khaki;
+    background-color:rgb(255, 252, 228);
+    outline: 5px dotted rgb(255, 252, 228);
+}
+
+.idol:nth-child(2) {
+    color:aquamarine;
+    background-color:rgb(216, 255, 242);
+    outline: 5px dotted rgb(216, 255, 242);
+}
+
+.idol:nth-child(3) {
+    color:lightblue;
+    background-color: rgb(214, 245, 255);
+    outline: 5px dotted rgb(214, 245, 255);
+}
+
+.idol:nth-child(4) {
+    color:thistle;
+    background-color: rgb(255, 227, 255);
+    outline: 5px dotted rgb(255, 227, 255);
+}
+
+.idol:nth-child(5) {
+    color:pink;
+    background-color: rgb(255, 232, 235);
+    outline: 5px dotted rgb(255, 232, 235);
+}
+
+.idol img {
+    width:100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.idol p {
+    margin: 12px 0 5px;
+    font-size: 21px;
+    line-height: 10px;
+}
+
+.idol:hover {
+    transform: scale(1.1);
+}
+
+.music {
+    width: 200px;
+    height: 30px;
+}

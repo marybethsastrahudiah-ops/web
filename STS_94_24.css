@@ -1,0 +1,154 @@
+body {
+    background-image: url(bg\ 1.jpg);
+    background-size: auto;
+    background-position: center;
+}
+
+div.effect h1 {
+    font-size: 35px;
+    color:#fdddd8;
+    text-align: center;
+    font-family: "matchamint";
+    background-color: white;
+}
+
+div.effect h1:hover {
+    font-size: 40px;
+    color:#e3c2bd
+}
+
+.judul {
+    width: 1250px;
+    height: 300px;
+    align-items: center;
+}
+
+div.efek h2 {
+    font-size: 30px;
+    color:#d5c2d7;
+    text-align: center;
+    font-family: "matchamint";
+    background-color:white;
+}
+
+div.efek h2:hover {
+    font-size: 35px;
+    color:#b999bd
+}
+
+.fotocara {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    width: 95%;
+    margin: 30px auto;
+}
+
+.cara {
+    flex: 1;
+    padding: 10px;
+    height: 250px;
+    text-align: center;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+    font-family:"gocake";
+}
+
+.cara:nth-child(1) {
+    background-color:#fdddd8;
+    color: #e3c2bd    
+}
+
+.cara:nth-child(2) {
+    background-color:#f4d5c4;
+    color:#d0b3a4
+}
+
+.cara:nth-child(3) {
+    background-color:#feeab5;
+    color:#d3c395
+}
+
+.cara:nth-child(4) {
+    background-color:#d2d4ae;
+    color: #acae8f
+}
+
+.cara:nth-child(5) {
+    background-color:#b7ccd4;
+    color:#8ba0a9
+}
+
+.cara:nth-child(6) {
+    background-color:#d5c2d7;
+    color:#b999bd
+}
+
+.cara img {
+    width:100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.cara p {
+    margin: 12px 0 5px;
+    font-size: 18px;
+}
+
+.cara:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px gray
+}
+
+h4 {
+    color: #feeab5;
+    background-color: white;
+    font-family: "matchamint";
+    font-size: 25px;
+    text-align: center;
+}
+
+div.efek h3 {
+    font-size: 30px;
+    color:#b7ccd4;
+    text-align: center;
+    font-family: "matchamint";
+    background-color:white;
+}
+
+div.efek h3:hover {
+    font-size: 35px;
+    color:#8ba0a9
+}
+
+@font-face {
+    font-family: "matchamint";
+    src: url(matcha_mint/Matcha\ Mint.otf)
+}
+
+@font-face {
+    font-family: "gocake";
+    src: url(go_cake/Gocake.otf)
+}
+
+@font-face {
+    font-family: "childer";
+    src: url(childer/Childer.otf)
+}
+
+@font-face {
+    font-family: "simplyolive";
+    src: url(simply_olive/Simply\ Olive\ DEMO.ttf)
+}
+
+.info p {
+    font-size: 22px;
+    color:#acae8f;
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    font-family: "simplyolive";
+    background-color: white;  
+}
